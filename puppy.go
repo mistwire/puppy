@@ -1,9 +1,10 @@
 package puppy
 
-import(
+import (
+	"fmt"
+
 	"github.com/mistwire/dog"
 )
-
 
 func Bark() string {
 	return "Woof!"
@@ -18,4 +19,8 @@ func BigBark() string {
 }
 func BigBarks() string {
 	return dog.WhenGrownUp(Barks())
+}
+
+func From11() {
+	fmt.Println("I'm from version 1.1.0")
 }
